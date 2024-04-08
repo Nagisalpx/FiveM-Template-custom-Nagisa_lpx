@@ -225,9 +225,9 @@ tasks:
     dest: ./resources/[LOCKED]/[core]
 
   - action: download_github
-  src: https://github.com/Nagisalpx/FiveM-Template-custom-Nagisa_lpx/tree/main/%5BRESSOURCES%5D
-  ref: main
-  dest: ./resources
+    src: https://github.com/Nagisalpx/FiveM-Template-custom-Nagisa_lpx/tree/main/%5BRESSOURCES%5D
+    ref: main
+    dest: ./resources
 
   - action: download_github
     src: https://github.com/AvarianKnight/pma-voice
