@@ -1,6 +1,0 @@
-Installation
-
-Go to: (mods)update/x64/dlcpacks/patchday3ng/dlc.rpf/x64/levels/gta5/vehicles.rpf
-
-and replace "swat_sign_1" in both riot.ytd files with one from my folder. Hit save and go for a ride! :)
-
