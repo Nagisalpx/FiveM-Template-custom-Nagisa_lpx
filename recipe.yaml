@@ -225,7 +225,7 @@ tasks:
     dest: ./resources/[LOCKED]/[core]
 
   - action: move_path
-    src: ./tmp/recipe/[RESOURCES]/
+    src: ./tmp/recipe/[RESOURCES]
     dest: ./resources
 
 
