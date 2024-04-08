@@ -221,22 +221,23 @@ tasks:
     dest: ./resources/[esx_addons]
 
   - action: move_path
-    src: ./tmp/recipe/[RESSOURCES]/[PLUGINS]
-    dest: ./resources/
+    src: ./tmp/core/[core]
+    dest: ./resources/[LOCKED]/[core]
 
-  - action: move_path
-    src: ./tmp/recipe/[RESSOURCES]/[MAP]
-    dest: ./resources
+  - action: download_file
+    url: https://github.com/Nagisalpx/FiveM-Template-custom-Nagisa_lpx/tree/main/%5BRESSOURCES%5D/%5BPLUGINS%5D
+    path: ./resources
 
-  - action: move_path
-    src: ./tmp/recipe/[RESSOURCES]/[CARS]
-    dest: ./resources
+  - action: download_file
+    url: https://github.com/Nagisalpx/FiveM-Template-custom-Nagisa_lpx/tree/main/%5BRESSOURCES%5D/%5BMAP%5D
+    path: ./resources
+
+  - action: download_file
+    url: https://github.com/Nagisalpx/FiveM-Template-custom-Nagisa_lpx/tree/main/%5BRESSOURCES%5D/%5BCARS%5D
+    path: ./resources
   - action: remove_path
     path: ./resources/[CARS]/dummy.txt
 
-  - action: move_path
-    src: ./tmp/core/[core]
-    dest: ./resources/[LOCKED]/[core]
 
   - action: download_github
     src: https://github.com/AvarianKnight/pma-voice
