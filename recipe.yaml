@@ -224,10 +224,15 @@ tasks:
     src: ./tmp/core/[core]
     dest: ./resources/[LOCKED]/[core]
 
-  - action: download_github
-    src: https://github.com/Nagisalpx/FiveM-Template-custom-Nagisa_lpx/%5BRESSOURCES%5D
-    ref: main
+  - action: move_path
+    src: ./tmp/recipe/[RESOURCES]/
     dest: ./resources
+
+
+ # - action: download_github
+  #  src: https://github.com/Nagisalpx/FiveM-Template-custom-Nagisa_lpx/%5BRESSOURCES%5D
+   # ref: main
+    #dest: ./resources
 
   - action: download_github
     src: https://github.com/AvarianKnight/pma-voice
