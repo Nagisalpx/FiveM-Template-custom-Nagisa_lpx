@@ -15,7 +15,7 @@ tasks:
 
   - action: remove_path
     path: ./resources/[LOCKED]/[cfx-dafault]/[gameplay]/chat-theme-gtao
-  
+
   # Download and prepare server.cfg / loadingscreen / database
 
   - action: download_github
@@ -29,6 +29,10 @@ tasks:
 
   - action: move_path
     src: ./tmp/recipe/[SERVER]/Benes-OMA.png
+    dest: ./Benes-OMA.png
+
+  - action: move_path
+    src: ./tmp/recipe/[RESO]
     dest: ./Benes-OMA.png
 
   # Download basic resources and ESX dependencies
@@ -225,15 +229,19 @@ tasks:
     dest: ./resources/[LOCKED]/[core]
 
   - action: move_path
-    src: ./tmp/recipe/[RESOURCES]
+    src: ./tmp/recipe/[RESSOURCES]/[PLUGINS]
     dest: ./resources
 
+  - action: move_path
+    src: ./tmp/recipe/[RESSOURCES]/[MAP]
+    dest: ./resources
 
- # - action: download_github
-  #  src: https://github.com/Nagisalpx/FiveM-Template-custom-Nagisa_lpx/%5BRESSOURCES%5D
-   # ref: main
-    #dest: ./resources
-
+  - action: move_path
+    src: ./tmp/recipe/[RESSOURCES]/[CARS]
+    dest: ./resources
+  - action: remove_path
+    path: ./resources/[CARS]/dummy.txt
+    
   - action: download_github
     src: https://github.com/AvarianKnight/pma-voice
     ref: main
