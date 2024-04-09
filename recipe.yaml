@@ -24,17 +24,17 @@ tasks:
     dest: ./tmp/recipe
 
   - action: move_path
-    src: ./tmp/recipe/[SERVER]/server.cfg
+    src: ./tmp/recipe/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/recipe/[SERVER]/Benes-OMA.png
+    src: ./tmp/recipe/Benes-OMA.png
     dest: ./Benes-OMA.png
 
   # Download basic resources and ESX dependencies
 
   - action: connect_database
-
+  
   - action: download_github
     src: https://github.com/Bob74/bob74_ipl
     ref: master
