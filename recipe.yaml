@@ -31,10 +31,6 @@ tasks:
     src: ./tmp/recipe/[SERVER]/Benes-OMA.png
     dest: ./Benes-OMA.png
 
-  - action: move_path
-    src: ./tmp/recipe/[RESO]
-    dest: ./Benes-OMA.png
-
   # Download basic resources and ESX dependencies
 
   - action: connect_database
