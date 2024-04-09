@@ -246,9 +246,6 @@ tasks:
   ## DATABASE
 
   - action: query_database
-    file: ./tmp/core/[SQL]/legacy.sql
-
-  - action: query_database
     file: ./tmp/recipe/sql.sql
 
   - action: download_file
