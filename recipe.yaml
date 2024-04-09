@@ -249,7 +249,7 @@ tasks:
     file: ./tmp/core/[SQL]/legacy.sql
 
   - action: query_database
-    file: ./tmp/recipe/[SQL]/sql.sql
+    file: ./tmp/recipe/sql.sql
 
   - action: download_file
     url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
