@@ -95,8 +95,8 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_optionalneeds
 
- # - action: waste_time # prevent github throttling
-  #  seconds: 5
+  #- action: waste_time # prevent github throttling
+   # seconds: 5
 
   - action: download_github
     src: https://github.com/esx-framework/esx_property
@@ -169,7 +169,7 @@ tasks:
     dest: ./tmp/addons/esx_society
 
  # - action: waste_time # prevent github throttling
-   # seconds: 5
+  #  seconds: 5
 
   - action: download_github
     src: https://github.com/esx-framework/esx_license
@@ -226,15 +226,15 @@ tasks:
 
   - action: move_path
     src: ./tmp/recipe/[RESSOURCES]/[PLUGINS]
-    dest: ./resources
+    dest: ./resources/[PLUGINS]
 
   - action: move_path
     src: ./tmp/recipe/[RESSOURCES]/[MAP]
-    dest: ./resources
+    dest: ./resources/[MAP]
 
   - action: move_path
     src: ./tmp/recipe/[RESSOURCES]/[CARS]
-    dest: ./resources
+    dest: ./resources/[CARS]
   - action: remove_path
     path: ./resources/[CARS]/dummy.txt
     
