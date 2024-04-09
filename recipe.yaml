@@ -95,8 +95,8 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_optionalneeds
 
-  - action: waste_time # prevent github throttling
-    seconds: 5
+ # - action: waste_time # prevent github throttling
+  #  seconds: 5
 
   - action: download_github
     src: https://github.com/esx-framework/esx_property
@@ -168,8 +168,8 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_society
 
-  - action: waste_time # prevent github throttling
-    seconds: 5
+ # - action: waste_time # prevent github throttling
+   # seconds: 5
 
   - action: download_github
     src: https://github.com/esx-framework/esx_license
