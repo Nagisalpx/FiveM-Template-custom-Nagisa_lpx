@@ -1,1 +1,0 @@
-# FiveM-Template-custom-Nagisa_lpx
