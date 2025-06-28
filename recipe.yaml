@@ -23,6 +23,11 @@ tasks:
     ref: main
     dest: ./tmp/recipe
 
+  - action: download_github
+    src: https://github.com/Nagisalpx/pp_cfg
+    ref: main
+    dest: ./tmp/recipe
+
   - action: move_path
     src: ./tmp/recipe/server.cfg
     dest: ./server.cfg
